@@ -647,8 +647,6 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  /* }
-.e-mail { */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -664,6 +662,22 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+/* .e-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 5px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+} */
 
 .subscribe {
   font-style: normal;
