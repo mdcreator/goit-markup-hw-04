@@ -114,7 +114,8 @@ body {
   justify-content: flex-end;
   /* margin-left: 334px; */
 }
-.contacts-link .contact {
+.contacts-link .email,
+.contacts-link .tel {
   display: block;
   color: var(--primery-text-color);
   font-weight: 500;
@@ -124,11 +125,33 @@ body {
   text-decoration: none;
 }
 
-.contacts-link .contact:hover,
-.contacts-link .contact:focus {
+.contacts-link .email:hover,
+.contacts-link .email:focus {
   color: var(--accent-color);
 }
 
+.contacts-link .tel:hover,
+.contacts-link .tel:focus {
+  color: var(--accent-color);
+}
+
+.email::before {
+  content: '';
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url(../images/optimization/envelope.svg);
+}
+
+.tel::before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url(../images/optimization/smartphone.svg);
+}
 /* Hero */
 .overlay {
   height: 600px;
@@ -136,9 +159,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
-  background-image: url('../images/optimization/header.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/optimization/header.jpg');
   background-repeat: no-repeat;
-  background-position: relative;
+  background-position: center;
   background-size: cover;
 }
 
@@ -146,10 +174,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
-  /* background-repeat: no-repeat;
-  background-position: relative;
-  background-size: cover; */
 }
 
 .hero-title {
@@ -212,6 +236,14 @@ body {
   width: 278px;
 }
 
+.feature-list::before {
+  contain: '';
+  height: 120px;
+  display: inline-block;
+  /* background-image: url(../images/optimization/antenna.svg); */
+  background-size: contain;
+  background-color: #f5f4fa;
+}
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -312,7 +344,8 @@ body {
 
 .filter-item .button:hover,
 .filter-item .button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .project-block {
