@@ -145,7 +145,10 @@ body {
 .tel-icon {
   margin-right: 10px;
   display: inline-block;
+  background-size: contain;
+  fill: currentColor;
 }
+
 /* Hero */
 .overlay {
   height: 600px;
@@ -470,24 +473,36 @@ body {
 }
 
 .social-list {
-  margin-left: auto;
-  margin: auto;
-  width: 207px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 .social-item:not(:last-child) {
-  margin-right: 39px;
+  margin-right: 10px;
 }
 
+.social-item {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
 .social-link {
   fill: #afb1b8;
-  align-items: center;
+  padding: 12px;
+  display: flex;
+  list-style: none;
 }
 
 .social-link:hover,
 .social-link:focus {
+  fill: #ffff;
+}
+.social-item:hover,
+.social-item:focus {
   background-color: var(--accent-color);
 }
 
@@ -511,69 +526,59 @@ body {
   margin-right: 30px;
 }
 
-.icon-logo-one:hover,
-.icon-logo-one:focus {
-  color: var(--accent-color);
+.client-card {
+  fill: #afb1b8;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-card:hover,
+.client-card:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .icon-logo-one {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 20px 63px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .icon-logo-two {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 19px 67px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .icon-logo-three {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 24px 63px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .icon-logo-four {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 25px 46px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .icon-logo-five {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 22px 58px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .icon-logo-six {
-  fill: #afb1b8;
   width: 170px;
   height: 90px;
   padding: 23px 43px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 /* .portfolio-title {
@@ -654,14 +659,36 @@ body {
 
   margin-bottom: 21px;
 }
+
+.social {
+  display: flex;
+}
+
 .social .info {
-  color: var(--primery-text-color);
+  fill: #ffffff;
   text-decoration: none;
 }
 
 .social .info:hover,
 .social .info:focus {
   color: var(--accent-color);
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--accent-color);
 }
 
 .exhortation-block {
