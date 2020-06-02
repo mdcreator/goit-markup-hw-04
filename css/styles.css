@@ -240,10 +240,10 @@ body {
   width: 278px;
 }
 
-.feature-item {
+.feature-icon {
+  display: flex;
   height: 120px;
-  padding: 25px 102px;
-  /* display: block; */
+  align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   box-sizing: border-box;
@@ -253,11 +253,6 @@ body {
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
-
-.feature-pic {
-  margin-bottom: 30px;
-}
-
 .feature-list .text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -447,7 +442,6 @@ body {
 
 .team-card {
   width: 278px;
-  padding-bottom: 24px;
   background: var(--primery-background-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -790,3 +784,13 @@ body {
 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
