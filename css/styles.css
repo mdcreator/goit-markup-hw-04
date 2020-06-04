@@ -116,7 +116,9 @@ body {
 }
 .contacts-link .email,
 .contacts-link .tel {
-  display: flex;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -138,6 +140,7 @@ body {
 .email-icon {
   margin-right: 10px;
   display: inline-block;
+  vertical-align: middle;
   background-size: contain;
   fill: currentColor;
 }
@@ -145,6 +148,7 @@ body {
 .tel-icon {
   margin-right: 10px;
   display: inline-block;
+  vertical-align: bottom;
   background-size: contain;
   fill: currentColor;
 }
@@ -248,6 +252,7 @@ body {
   background-color: #f5f4fa;
   box-sizing: border-box;
   border-radius: 4px;
+  justify-content: center;
 }
 
 .feature-item:not(:last-child) {
@@ -361,17 +366,20 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  background: var(--primery-background-color);
+  background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .project-card:nth-child(3n) {
   margin-right: 0;
 }
 
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .project-img {
   display: block;
   max-width: 100%;
@@ -635,6 +643,10 @@ body {
   text-decoration: none;
 }
 
+.address .info:hover,
+.address .info:focus {
+  color: var(--accent-color);
+}
 .social-block {
   width: calc((100% - 30px) / 12 * 3);
 }
@@ -785,7 +797,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -793,4 +805,4 @@ body {
     border: 0px;
     padding: 0px;
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden; */
