@@ -355,6 +355,8 @@ body {
 .filter-item .button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .project-block {
@@ -528,66 +530,24 @@ body {
   margin-right: 30px;
 }
 
-.client-card {
+.client-card .link {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   fill: #afb1b8;
   background-color: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-card:hover,
-.client-card:focus {
+.client-card .link:hover,
+.client-card .link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-
-.icon-logo-one {
-  width: 170px;
-  height: 90px;
-  padding: 20px 63px;
-  box-sizing: border-box;
-}
-
-.icon-logo-two {
-  width: 170px;
-  height: 90px;
-  padding: 19px 67px;
-  box-sizing: border-box;
-}
-
-.icon-logo-three {
-  width: 170px;
-  height: 90px;
-  padding: 24px 63px;
-  box-sizing: border-box;
-}
-
-.icon-logo-four {
-  width: 170px;
-  height: 90px;
-  padding: 25px 46px;
-  box-sizing: border-box;
-}
-
-.icon-logo-five {
-  width: 170px;
-  height: 90px;
-  padding: 22px 58px;
-  box-sizing: border-box;
-}
-
-.icon-logo-six {
-  width: 170px;
-  height: 90px;
-  padding: 23px 43px;
-  box-sizing: border-box;
-}
-
-/* .portfolio-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-} */
 
 /* Footer */
 
@@ -680,7 +640,8 @@ body {
   color: var(--accent-color);
 }
 
-.social-icon {
+.social-icon .info {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -692,8 +653,8 @@ body {
   margin-right: 10px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon .info:hover,
+.social-icon .info:focus {
   background-color: var(--accent-color);
 }
 
